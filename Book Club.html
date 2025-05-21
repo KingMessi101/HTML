@@ -5,16 +5,30 @@
                 background-color:rgb(250, 208, 131)
             }
             header{
-                background-color:lightblue
+                background-color:lightblue;
+                display: flex;
+                justify-content: space-between; 
+                align-items: center;
             }
             nav{
-                background-color:lightgreen
+                background-color:lightgreen;
+                position: sticky;
+                top: 0;
+                z-index: 2;
+                display: flex;
+                justify-content: center;
             }
             #intro{
-                background-color:lightred
+                background-color:lightpink;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
             }
            #main-section{
-                background-color:lightgrey
+                background-color:lightgrey;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 5px;
+                font-size: 24px;
+                text-align: center;
             }
             #bestsellers,footer{
                 background-color:lightbrown
@@ -32,7 +46,16 @@
                 color:rgb(78, 73, 73)
             }
             table,th,td,tr{
-                border:1px solid Black
+                border:1px solid Black;
+            }
+            #teacher-info {
+                border-radius: 5px;
+                margin: 10px;
+                width: 400px;
+                box-shadow: 6px 0px 21px -3px #333333;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         </style>
         <title>Book Club</title>
