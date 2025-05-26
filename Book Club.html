@@ -9,6 +9,7 @@
                 display: flex;
                 justify-content: space-between; 
                 align-items: center;
+                grid-area: header;
             }
             nav{
                 background-color:lightgreen;
@@ -17,11 +18,13 @@
                 z-index: 2;
                 display: flex;
                 justify-content: center;
+                grid-area: nav; 
             }
             #intro{
                 background-color:lightpink;
                 font-family: Arial, Helvetica, sans-serif;
                 text-align: center;
+                grid-area: intro;
             }
            #main-section{
                 background-color:lightgrey;
@@ -29,9 +32,12 @@
                 padding: 5px;
                 font-size: 24px;
                 text-align: center;
+                grid-area: main-section;
             }
             #bestsellers,footer{
-                background-color:lightbrown
+                background-color: lightbrown;
+                grid-area: bestsellers;
+                grid-area: footer;
             }
             body,header,nav,#intro,#main-section,footer{
                 border: 1px solid black
@@ -56,6 +62,15 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto auto auto;
+                grid-template-areas:
+                "header header header header intro"
+                "nav nav nav nav intro"
+                "main-section main-section main-section main-section bestsellers"
+                "footer footer footer footer footer";
             }
         </style>
         <title>Book Club</title>
