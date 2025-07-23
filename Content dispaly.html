@@ -22,6 +22,50 @@
             background-image:url('socccccer.jpg');
             min-height: 100%;
         }
+        .section {
+            text-align: center;
+            padding:50px 80px;
+        }
+        .section-light{
+            background-color: white;
+            color: #666;
+        }
+        .section-dark{
+            background-color: black;
+            color: white;
+        }
+        .ptext{
+            position: absoloute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: black;
+            font-size: 27px;
+            letter-spacing:8px;
+            text-transform: uppercase;
+        }
+        .ptext .border{
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+        .ptext .border.trans{
+            background-color: transparent;
+        }
+        @media(max-width:568px){
+            .pimg1, .pimg2, .pimg3{
+                background-attachment:scroll
+            }
+        }
+        .footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
         </style>
     </head>
     <body>
@@ -38,6 +82,9 @@
                 Image Two Text
             </span>
         </div>
+        </div>
+        <div class="footer">
+            <p>@copy all rights and reserved by Anish</p>
         </div>
     </body>
 </html>
