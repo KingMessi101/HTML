@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Contact Us</title>
+        <style>
+            .body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        
+            .topnav {
+                overflow: hidden;
+                background-color: #333;
+            }
+        
+            .topnav a {
+                float: left;
+                color: 1affa3;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+        
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+        
+            .topnav a:active {
+                background-color: ffe066;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+    <h1>Contact Us</h1>
+    <body>
+        <div class="topnav"> 
+            <a href="https://www.youtube.com/watch?v=Pit5X4Yw8NI">Contact_Us</a>
+        </div>
+        <h2>Hi my name is Anish To contact us press on the 'Contact_Us' at the top.</h2>
+        <script>
+
+            window.onload = function () {
+                 var myIndex = 0;
+                 carousel();
+                 function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                     myIndex++;
+                      if (myIndex > x.length) { myIndex = 1 }
+                      x[myIndex - 1].style.display = "block";
+                      setTimeout(carousel, 3000);
+                    }
+                 }
+        </script>
+        <div class="footer">
+            <p>7897 467 637 </p>
+                <p>Australia</p>
+                <p>Apple5000@bannana&pear.com</p>
+        </div>
+    </body>
+</html>
